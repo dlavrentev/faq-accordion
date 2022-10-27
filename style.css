@@ -1,3 +1,32 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+}
+
+.container {
+    /* change */
+    max-width: 327px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+border-radius: 23px;
+}
+
+.container img {
+    width: 237px;
+    height: auto;
+    position: relative;
+    top: ;
+}
+
+
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     background-color: #eee;
