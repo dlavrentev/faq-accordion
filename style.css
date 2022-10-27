@@ -8,23 +8,16 @@ html {
 }
 
 .container {
-    /* change */
-    max-width: 327px; 
+    max-width: 327px; /* change */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #FFFFFF;
-box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
-border-radius: 23px;
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+    border-radius: 23px;
 }
 
-.container img {
-    width: 237px;
-    height: auto;
-    position: relative;
-    top: ;
-}
 
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -55,7 +48,7 @@ border-radius: 23px;
   }
 
   .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    content: '\032C'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: #777;
     float: right;
@@ -63,5 +56,5 @@ border-radius: 23px;
   }
   
   .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    content: "\032D"; /* Unicode character for "minus" sign (-) */
   }
