@@ -1,18 +1,23 @@
-var acc = document.getElementsByClassName("accordion");
-var i;
+const questions = document.querySelectorAll(".question");
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
+questions.forEach((question) => {
+  const button = question.querySelector(".question__button");
+  const questionText = question.querySelector(".question__title__text");
+  button.addEventListener("click", () => {
+    questions.forEach((item) => {
+      if(item !== question) {
+        item.classList.remove("show-text");
       }
     });
-}
+    question.classList.toggle("show-text");
+  });
+
+  questionText.addEventListener("click", () => {
+    questions.forEach((item) => {
+      if(item !== question) {
+        item.classList.remove("show-text");
+      }
+    });
+    question.classList.toggle("show-text");
+  });
+});
