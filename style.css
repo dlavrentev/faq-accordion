@@ -1,6 +1,10 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
-    margin: 0;
-    padding: 0;
     height: 100vh;
     display: grid;
     place-items: center;
@@ -16,6 +20,28 @@ html {
     background: #FFFFFF;
     box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
     border-radius: 23px;
+}
+
+.container::before {
+  content: "";
+  background: url(/assets/images/illustration-woman-online-mobile.svg) no-repeat;
+  height: 180px;
+  width: 237px;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translate(-55%, -55%);
+}
+
+.container::after {
+  content: "";
+  background: url(/assets/images/bg-pattern-mobile.svg) no-repeat;
+  width: 268px;
+  height: 180px;
+  position: absolute;
+  top: 6.5rem;
+  left: 50%;
+  transform: translate(-45%, -53%);
 }
 
 
